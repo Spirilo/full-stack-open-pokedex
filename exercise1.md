@@ -1,0 +1,7 @@
+Exercise 11.1
+
+The application is build with Java. For linting I found that Checkstyle could be really useful. Also Sonarlint and SpotBugs could be possible candidates. Also some IDEs (Eclipse, IntelliJ) can do some linting by default for Java. For testing, I would propably pick JUnit and Selenium. I read that JUnit is quite widely used with Java. I have worked with Selenium, so I think it would work well with user-end testing. For building I would choose Maven, as it is build with Java. Other option could be Gradle.
+
+Other alternatives for Jenkins and GitHub actions I found e.g. GitLab, TeamCity and CircleCI. Although, I found a report from 2022 where 29,000 developers answered what CI tools they mostly use, and Jenkins(52%), Github actions(53%) and GitLab(35%) are the most popular ones.
+
+To make a decision if the setup would be in cloud-based or self-hosted environment, you would need to know what kind of application it is. If it's just a small group project made with friends, then maybe cloud at first. Of course if it grows bigger or it gets a lot of users to use it, it might be wise to switch it to self-hosted. On the other hand, if the project is made at work, and there is a lot of configuration and things that affect how it runs - and is crucial to run - then maybe opt for self-hosted straight away.
