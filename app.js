@@ -14,6 +14,10 @@ app.get('/branch', (req, res) => {
   res.send('I make small change okey')
 })
 
+app.get('/branch2', (req, res) => {
+  res.send('I make second small change okey')
+})
+
 app.get('/health', (req, res) => {
   res.send('ok')
 })
