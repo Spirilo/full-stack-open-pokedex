@@ -33,6 +33,7 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:5000
   deploy:
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     permissions: # Required if github_deployment is set to true.
       deployments: write
