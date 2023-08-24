@@ -14,8 +14,8 @@ app.get('/branch', (req, res) => {
   res.send('I make small change okey')
 })
 
-app.get('/branch2', (req, res) => {
-  res.send('I make second small change okey')
+app.get('/tags', (req, res) => {
+  res.send('Tag release testing')
 })
 
 app.get('/health', (req, res) => {
