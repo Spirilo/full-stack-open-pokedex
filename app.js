@@ -10,8 +10,8 @@ app.get('/version', (req, res) => {
   res.send('1.02') // change this string to ensure a new version deployed
 })
 
-app.get('/tags', (req, res) => {
-  res.send('Tag release testing other branch')
+app.get('/message', (req, res) => {
+  res.send('test') // change this string to ensure a new version deployed
 })
 
 app.get('/health', (req, res) => {
