@@ -37,7 +37,8 @@ jobs:
         if: success()
         with:
           severity: info
-          details: Find the app on https://pokedex-cicd.onrender.com/
+          description: Commit
+          details: Find the app on <a href="https://pokedex-cicd.onrender.com/">Pokedex</a>
           text: New version of pokedex available!
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Test Failure
