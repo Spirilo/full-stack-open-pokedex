@@ -1,4 +1,4 @@
-name: Schedule cehcks
+name: Schedule checks
 
 on:
   schedule:
