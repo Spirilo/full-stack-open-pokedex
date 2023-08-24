@@ -15,7 +15,7 @@ app.get('/branch', (req, res) => {
 })
 
 app.get('/tags', (req, res) => {
-  res.send('Tag release testing part 2')
+  res.send('Tag release testing other branch')
 })
 
 app.get('/health', (req, res) => {
