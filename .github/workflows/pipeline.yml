@@ -32,7 +32,18 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
+  tag_release:
+    if: ${{ github.event_name == 'push' }}
+    needs: [simple_deployment_pipeline]
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.55.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   deploy:
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     permissions: # Required if github_deployment is set to true.
       deployments: write
